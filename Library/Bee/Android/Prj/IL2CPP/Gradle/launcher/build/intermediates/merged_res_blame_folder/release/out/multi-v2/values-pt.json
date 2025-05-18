@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.um.mystickynotes.launcher-mergeReleaseResources-19:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\f5e4bff6dddc95c1e4569b2a41c648ee\\transformed\\core-1.9.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "13",
+                        "startColumns": "4",
+                        "startOffsets": "1170",
+                        "endColumns": "100",
+                        "endOffsets": "1266"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\535220ad59c66261cb0c4a8c43b91031\\transformed\\jetified-arcore_client\\res\\values-pt\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,239,291,409,535",
+                        "endColumns": "48,51,117,125,86",
+                        "endOffsets": "238,290,408,534,621"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,108,164,286,416",
+                        "endColumns": "52,55,121,129,90",
+                        "endOffsets": "103,159,281,411,502"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\96f4d0e107f7e2a80c6069249614ffd4\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,121",
+                        "endOffsets": "159,281"
+                    },
+                    "to": {
+                        "startLines": "7,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "507,616",
+                        "endColumns": "108,121",
+                        "endOffsets": "611,733"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\f8a6179c5531fafa6f8c12717ed4f0e4\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,170,269,381",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "165,264,376,482"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "738,853,952,1064",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "848,947,1059,1165"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+#Sun May 18 18:53:23 GMT+08:00 2025
+base.1=C\:\\Users\\Vaio\\StickyNotes\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.1=classes2.dex
+base.0=C\:\\Users\\Vaio\\StickyNotes\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

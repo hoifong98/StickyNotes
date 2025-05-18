@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="basket" size="20.000000 20.000000" />
+    <ImageTarget name="cat" size="50.000000 50.000000" />
+    <ImageTarget name="card" size="50.000000 26.664785" />
+  </Tracking>
+</QCARConfig>

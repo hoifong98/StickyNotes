@@ -1,0 +1,523 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.um.mystickynotes"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="29"
+9-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="35" />
+10-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+13        android:anyDensity="true"
+13-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+14        android:largeScreens="true"
+14-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+15        android:normalScreens="true"
+15-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+16        android:smallScreens="true"
+16-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+18
+19    <uses-feature android:glEsVersion="0x00030000" />
+19-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:5-54
+19-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:19-51
+20
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-67
+21-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-64
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-65
+22-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-62
+23
+24    <uses-feature
+24-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-15:36
+25        android:name="android.hardware.camera"
+25-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-47
+26        android:required="true" />
+26-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-33
+27    <uses-feature
+27-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:5-18:36
+28        android:name="android.hardware.camera.autofocus"
+28-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:9-57
+29        android:required="false" />
+29-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-33
+30    <uses-feature
+30-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:5-21:36
+31        android:name="android.hardware.camera.front"
+31-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-53
+32        android:required="false" />
+32-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33
+33    <uses-feature
+33-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-24:36
+34        android:name="android.hardware.touchscreen"
+34-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-52
+35        android:required="false" />
+35-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-33
+36    <uses-feature
+36-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:5-27:36
+37        android:name="android.hardware.touchscreen.multitouch"
+37-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-63
+38        android:required="false" />
+38-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-33
+39    <uses-feature
+39-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:5-30:36
+40        android:name="android.hardware.touchscreen.multitouch.distinct"
+40-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:9-72
+41        android:required="false" />
+41-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:9-33
+42    <uses-feature
+42-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:5-33:35
+43        android:name="android.hardware.camera.ar"
+43-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:9-50
+44        android:required="true" />
+44-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:33:9-32
+45    <uses-feature
+45-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:5-36:35
+46        android:name="com.google.ar.core.depth"
+46-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:9-48
+47        android:required="true" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+47-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:9-32
+48    <!-- <uses-sdk android:minSdkVersion="21"/> -->
+49    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+49-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:22:5-79
+49-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:22:22-76
+50    <uses-permission android:name="android.permission.WAKE_LOCK" />
+50-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:25:5-68
+50-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:25:22-65
+51    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+51-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:26:5-110
+51-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:26:22-107
+52    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+52-->[com.google.android.gms:play-services-measurement-impl:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\cfadca853bdaca339e12b4ea334a84c9\transformed\jetified-play-services-measurement-impl-22.4.0\AndroidManifest.xml:27:5-79
+52-->[com.google.android.gms:play-services-measurement-impl:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\cfadca853bdaca339e12b4ea334a84c9\transformed\jetified-play-services-measurement-impl-22.4.0\AndroidManifest.xml:27:22-76
+53    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+53-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:26:5-88
+53-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:26:22-85
+54    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+54-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:27:5-82
+54-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:27:22-79
+55
+56    <queries>
+56-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:29:5-31:15
+57        <package android:name="com.google.ar.core" />
+57-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:30:9-54
+57-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:30:18-51
+58    </queries>
+59    <!--
+60        Required by Vuforia: Add this permission to access IMU sensors at high rate
+61        for device tracker functionality on Android 12+.
+62    -->
+63    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+63-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:16:5-85
+63-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:16:22-82
+64    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+64-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Vaio\.gradle\caches\transforms-3\01e88537845d7754cc8a5480b7b09718\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+64-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Vaio\.gradle\caches\transforms-3\01e88537845d7754cc8a5480b7b09718\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:9:22-95
+65
+66    <permission
+66-->[androidx.core:core:1.9.0] C:\Users\Vaio\.gradle\caches\transforms-3\f5e4bff6dddc95c1e4569b2a41c648ee\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+67        android:name="com.um.mystickynotes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+67-->[androidx.core:core:1.9.0] C:\Users\Vaio\.gradle\caches\transforms-3\f5e4bff6dddc95c1e4569b2a41c648ee\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+68        android:protectionLevel="signature" />
+68-->[androidx.core:core:1.9.0] C:\Users\Vaio\.gradle\caches\transforms-3\f5e4bff6dddc95c1e4569b2a41c648ee\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+69
+70    <uses-permission android:name="com.um.mystickynotes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+70-->[androidx.core:core:1.9.0] C:\Users\Vaio\.gradle\caches\transforms-3\f5e4bff6dddc95c1e4569b2a41c648ee\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+70-->[androidx.core:core:1.9.0] C:\Users\Vaio\.gradle\caches\transforms-3\f5e4bff6dddc95c1e4569b2a41c648ee\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+71
+72    <application
+72-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+73-->[androidx.core:core:1.9.0] C:\Users\Vaio\.gradle\caches\transforms-3\f5e4bff6dddc95c1e4569b2a41c648ee\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+74        android:extractNativeLibs="true"
+74-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:38:18-50
+75        android:icon="@mipmap/app_icon"
+75-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+76        android:label="@string/app_name" >
+76-->C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+77        <activity
+77-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:39:9-60:20
+78            android:name="com.unity3d.player.UnityPlayerActivity"
+78-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:13-66
+79            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+79-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-194
+80            android:exported="true"
+80-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-36
+81            android:hardwareAccelerated="false"
+81-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-48
+82            android:launchMode="singleTask"
+82-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-44
+83            android:resizeableActivity="false"
+83-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-47
+84            android:screenOrientation="fullUser"
+84-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-49
+85            android:theme="@style/UnityThemeSelector" >
+85-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-54
+86            <intent-filter>
+86-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:48:13-52:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:49:17-69
+87-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:49:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:17-77
+89-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:27-74
+90            </intent-filter>
+91
+92            <meta-data
+92-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:54:13-56:40
+93                android:name="unityplayer.UnityActivity"
+93-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:17-57
+94                android:value="true" />
+94-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:17-37
+95            <meta-data
+95-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:57:13-59:40
+96                android:name="android.notch_support"
+96-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:17-53
+97                android:value="true" />
+97-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:59:17-37
+98        </activity>
+99
+100        <meta-data
+100-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:62:9-64:33
+101            android:name="unity.splash-mode"
+101-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:63:13-45
+102            android:value="0" />
+102-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:64:13-30
+103        <meta-data
+103-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:65:9-67:36
+104            android:name="unity.splash-enable"
+104-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:66:13-47
+105            android:value="True" />
+105-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:67:13-33
+106        <meta-data
+106-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:68:9-70:36
+107            android:name="unity.launch-fullscreen"
+107-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:69:13-51
+108            android:value="True" />
+108-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:70:13-33
+109        <meta-data
+109-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:71:9-73:50
+110            android:name="notch.config"
+110-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:72:13-40
+111            android:value="portrait|landscape" />
+111-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:73:13-47
+112        <meta-data
+112-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:74:9-76:36
+113            android:name="unity.auto-report-fully-drawn"
+113-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:75:13-57
+114            android:value="true" />
+114-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:76:13-33
+115        <meta-data
+115-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:77:9-79:36
+116            android:name="unityplayer.SkipPermissionsDialog"
+116-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:78:13-61
+117            android:value="true" />
+117-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:79:13-33
+118        <meta-data
+118-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:80:9-82:40
+119            android:name="com.google.ar.core"
+119-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:81:13-46
+120            android:value="optional" />
+120-->[:unityLibrary] C:\Users\Vaio\StickyNotes\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:82:13-37
+121
+122        <service
+122-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:26:9-35:19
+123            android:name="com.google.firebase.components.ComponentDiscoveryService"
+123-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:27:13-84
+124            android:directBootAware="true"
+124-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+125            android:exported="false" >
+125-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:28:13-37
+126            <meta-data
+126-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+127                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+127-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+130                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+130-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\09b93fb98152718b74ba70b04c80fddc\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+133                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+133-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+135            <meta-data
+135-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:33:13-35:85
+136                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+136-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:34:17-139
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\297a5ee5096a87ee9c468698b1ab00c7\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:35:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\057d7e8d646d1d8144cefe2287d03333\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+139                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+139-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\057d7e8d646d1d8144cefe2287d03333\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\057d7e8d646d1d8144cefe2287d03333\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+141            <meta-data
+141-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Vaio\.gradle\caches\transforms-3\e65c07c553ade2f6f82566fd0775e908\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+142                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+142-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Vaio\.gradle\caches\transforms-3\e65c07c553ade2f6f82566fd0775e908\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Vaio\.gradle\caches\transforms-3\e65c07c553ade2f6f82566fd0775e908\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+145                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+145-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+147        </service>
+148
+149        <activity
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+150            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+150-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+151            android:excludeFromRecents="true"
+151-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+152            android:exported="true"
+152-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+153            android:launchMode="singleTask"
+153-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+154            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+154-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+155            <intent-filter>
+155-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+156                <action android:name="android.intent.action.VIEW" />
+156-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+156-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+157
+158                <category android:name="android.intent.category.DEFAULT" />
+158-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+158-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+159                <category android:name="android.intent.category.BROWSABLE" />
+159-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+159-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+160
+161                <data
+161-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+162                    android:host="firebase.auth"
+162-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+163                    android:path="/"
+163-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+164                    android:scheme="genericidp" />
+164-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+165            </intent-filter>
+166        </activity>
+167        <activity
+167-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+168            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+168-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+169            android:excludeFromRecents="true"
+169-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+170            android:exported="true"
+170-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+171            android:launchMode="singleTask"
+171-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+172            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+172-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+173            <intent-filter>
+173-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+174                <action android:name="android.intent.action.VIEW" />
+174-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+174-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+175
+176                <category android:name="android.intent.category.DEFAULT" />
+176-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+176-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+177                <category android:name="android.intent.category.BROWSABLE" />
+177-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+177-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+178
+179                <data
+179-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+180                    android:host="firebase.auth"
+180-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+181                    android:path="/"
+181-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+182                    android:scheme="recaptcha" />
+182-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\Vaio\.gradle\caches\transforms-3\35b4eaf18155480b83f91af74bd925fe\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+183            </intent-filter>
+184        </activity>
+185
+186        <service
+186-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+187            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+187-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+188            android:enabled="true"
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+189            android:exported="false" >
+189-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+190            <meta-data
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+191                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+192                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+193        </service>
+194
+195        <activity
+195-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+196            android:name="androidx.credentials.playservices.HiddenActivity"
+196-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+197            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+197-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+198            android:enabled="true"
+198-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+199            android:exported="false"
+199-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+200            android:fitsSystemWindows="true"
+200-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+201            android:theme="@style/Theme.Hidden" >
+201-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Vaio\.gradle\caches\transforms-3\2e98c0b2174fd56ffb56910e8d852f5d\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+202        </activity>
+203        <activity
+203-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+204            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+204-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+205            android:excludeFromRecents="true"
+205-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+206            android:exported="false"
+206-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+207            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+207-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+208        <!--
+209            Service handling Google Sign-In user revocation. For apps that do not integrate with
+210            Google Sign-In, this service will never be started.
+211        -->
+212        <service
+212-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+213            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+213-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+214            android:exported="true"
+214-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+215            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+215-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+216            android:visibleToInstantApps="true" />
+216-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Vaio\.gradle\caches\transforms-3\8774bf9d8c52322ca7412b7c0ae12ebd\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+217
+218        <receiver
+218-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:29:9-33:20
+219            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+219-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:30:13-85
+220            android:enabled="true"
+220-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:31:13-35
+221            android:exported="false" >
+221-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:32:13-37
+222        </receiver>
+223
+224        <service
+224-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:35:9-38:40
+225            android:name="com.google.android.gms.measurement.AppMeasurementService"
+225-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:36:13-84
+226            android:enabled="true"
+226-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:37:13-35
+227            android:exported="false" />
+227-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:38:13-37
+228        <service
+228-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:39:9-43:72
+229            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+229-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:40:13-87
+230            android:enabled="true"
+230-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:41:13-35
+231            android:exported="false"
+231-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:42:13-37
+232            android:permission="android.permission.BIND_JOB_SERVICE" />
+232-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\Vaio\.gradle\caches\transforms-3\65685088051d52dd162ab5a8fea149fb\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:43:13-69
+233
+234        <activity
+234-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\57673cfbdce204ecaca7da5c43f6d798\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:20:9-22:45
+235            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+235-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\57673cfbdce204ecaca7da5c43f6d798\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:20:19-85
+236            android:exported="false"
+236-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\57673cfbdce204ecaca7da5c43f6d798\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:22:19-43
+237            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+237-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\57673cfbdce204ecaca7da5c43f6d798\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:21:19-78
+238
+239        <provider
+239-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+240            android:name="com.google.firebase.provider.FirebaseInitProvider"
+240-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+241            android:authorities="com.um.mystickynotes.firebaseinitprovider"
+241-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+242            android:directBootAware="true"
+242-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+243            android:exported="false"
+243-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+244            android:initOrder="100" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+244-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Vaio\.gradle\caches\transforms-3\688de4efe6cb627bb9b91dda00a7e0dd\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+245        <meta-data
+245-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:36:9-38:41
+246            android:name="com.google.ar.core.min_apk_version"
+246-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:37:13-62
+247            android:value="210910000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+247-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:38:13-38
+248        <activity
+248-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:40:9-46:80
+249            android:name="com.google.ar.core.InstallActivity"
+249-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:41:13-62
+250            android:configChanges="keyboardHidden|orientation|screenSize"
+250-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:42:13-74
+251            android:excludeFromRecents="true"
+251-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:43:13-46
+252            android:exported="false"
+252-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:44:13-37
+253            android:launchMode="singleTop"
+253-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:45:13-43
+254            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+254-->[:arcore_client:] C:\Users\Vaio\.gradle\caches\transforms-3\535220ad59c66261cb0c4a8c43b91031\transformed\jetified-arcore_client\AndroidManifest.xml:46:13-77
+255
+256        <provider
+256-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:25:9-33:20
+257            android:name="com.vuforia.engine.app.VuforiaContentProvider"
+257-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:26:13-73
+258            android:authorities="com.um.mystickynotes.vuforia.share"
+258-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:27:13-65
+259            android:exported="false"
+259-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:28:13-37
+260            android:grantUriPermissions="true" >
+260-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:29:13-47
+261            <meta-data
+261-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:30:13-32:53
+262                android:name="android.support.FILE_PROVIDER_PATHS"
+262-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:31:17-67
+263                android:resource="@xml/filepaths" />
+263-->[:VuforiaEngine:] C:\Users\Vaio\.gradle\caches\transforms-3\9619a1b0356a896efa4bb194f499da90\transformed\jetified-VuforiaEngine\AndroidManifest.xml:32:17-50
+264        </provider>
+265
+266        <uses-library
+266-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\Vaio\.gradle\caches\transforms-3\c53de94b7030e29c95237b6c82f7da43\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:23:9-25:40
+267            android:name="android.ext.adservices"
+267-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\Vaio\.gradle\caches\transforms-3\c53de94b7030e29c95237b6c82f7da43\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:24:13-50
+268            android:required="false" />
+268-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\Vaio\.gradle\caches\transforms-3\c53de94b7030e29c95237b6c82f7da43\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:25:13-37
+269
+270        <meta-data
+270-->[com.google.android.gms:play-services-basement:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\c488e3074a347037b773ba46ff55ba24\transformed\jetified-play-services-basement-18.6.0\AndroidManifest.xml:21:9-23:69
+271            android:name="com.google.android.gms.version"
+271-->[com.google.android.gms:play-services-basement:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\c488e3074a347037b773ba46ff55ba24\transformed\jetified-play-services-basement-18.6.0\AndroidManifest.xml:22:13-58
+272            android:value="@integer/google_play_services_version" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+272-->[com.google.android.gms:play-services-basement:18.6.0] C:\Users\Vaio\.gradle\caches\transforms-3\c488e3074a347037b773ba46ff55ba24\transformed\jetified-play-services-basement-18.6.0\AndroidManifest.xml:23:13-66
+273        <activity
+273-->[com.google.android.play:core-common:2.0.3] C:\Users\Vaio\.gradle\caches\transforms-3\cd02bf46d2a46717fd93dedd2e616de5\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+274            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+274-->[com.google.android.play:core-common:2.0.3] C:\Users\Vaio\.gradle\caches\transforms-3\cd02bf46d2a46717fd93dedd2e616de5\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+275            android:exported="false"
+275-->[com.google.android.play:core-common:2.0.3] C:\Users\Vaio\.gradle\caches\transforms-3\cd02bf46d2a46717fd93dedd2e616de5\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+276            android:stateNotNeeded="true"
+276-->[com.google.android.play:core-common:2.0.3] C:\Users\Vaio\.gradle\caches\transforms-3\cd02bf46d2a46717fd93dedd2e616de5\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+277            android:theme="@style/Theme.PlayCore.Transparent" />
+277-->[com.google.android.play:core-common:2.0.3] C:\Users\Vaio\.gradle\caches\transforms-3\cd02bf46d2a46717fd93dedd2e616de5\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+278    </application>
+279
+280</manifest>

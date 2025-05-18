@@ -1,0 +1,111 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.um.mystickynotes.launcher-mergeReleaseResources-19:/values-en-rGB/values-en-rGB.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\535220ad59c66261cb0c4a8c43b91031\\transformed\\jetified-arcore_client\\res\\values-en-rGB\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "194,241,292,414,536",
+                        "endColumns": "46,50,121,121,83",
+                        "endOffsets": "240,291,413,535,619"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,106,161,287,413",
+                        "endColumns": "50,54,125,125,87",
+                        "endOffsets": "101,156,282,408,496"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\f8a6179c5531fafa6f8c12717ed4f0e4\\transformed\\browser-1.4.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,153,250,359",
+                        "endColumns": "97,96,108,98",
+                        "endOffsets": "148,245,354,453"
+                    },
+                    "to": {
+                        "startLines": "27,28,29,30",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2886,2984,3081,3190",
+                        "endColumns": "97,96,108,98",
+                        "endOffsets": "2979,3076,3185,3284"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\96f4d0e107f7e2a80c6069249614ffd4\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,113",
+                        "endOffsets": "162,276"
+                    },
+                    "to": {
+                        "startLines": "7,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "501,613",
+                        "endColumns": "111,113",
+                        "endOffsets": "608,722"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\f5e4bff6dddc95c1e4569b2a41c648ee\\transformed\\core-1.9.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "3289",
+                        "endColumns": "100",
+                        "endOffsets": "3385"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\57673cfbdce204ecaca7da5c43f6d798\\transformed\\jetified-play-services-base-18.6.0\\res\\values-en-rGB\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "197,298,446,567,670,817,936,1048,1147,1302,1403,1551,1672,1814,1958,2017,2075",
+                        "endColumns": "100,147,120,102,146,118,111,98,154,100,147,120,141,143,58,57,74",
+                        "endOffsets": "297,445,566,669,816,935,1047,1146,1301,1402,1550,1671,1813,1957,2016,2074,2149"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16,18,19,20,21,22,23,24,25,26",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "727,832,984,1109,1216,1367,1490,1606,1847,2006,2111,2263,2388,2534,2682,2745,2807",
+                        "endColumns": "104,151,124,106,150,122,115,102,158,104,151,124,145,147,62,61,78",
+                        "endOffsets": "827,979,1104,1211,1362,1485,1601,1704,2001,2106,2258,2383,2529,2677,2740,2802,2881"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vaio\\.gradle\\caches\\transforms-3\\c488e3074a347037b773ba46ff55ba24\\transformed\\jetified-play-services-basement-18.6.0\\res\\values-en-rGB\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "133",
+                        "endOffsets": "332"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1709",
+                        "endColumns": "137",
+                        "endOffsets": "1842"
+                    }
+                }
+            ]
+        }
+    ]
+}

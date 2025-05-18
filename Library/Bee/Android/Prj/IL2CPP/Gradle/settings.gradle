@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+include ':launcher', ':unityLibrary'
+include 'unityLibrary:xrmanifest.androidlib'
+include 'unityLibrary:FirebaseApp.androidlib'
+
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        
+        google()
+        mavenCentral()
+// Android Resolver Repos Start
+        def unityProjectPath = $/file:///C:/Users/Vaio/StickyNotes/$.replace("\\", "/")
+        maven {
+            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Firebase/m2repository") // Assets/Firebase/Editor/AppDependencies.xml:22, Assets/Firebase/Editor/AuthDependencies.xml:20, Assets/Firebase/Editor/DatabaseDependencies.xml:22
+        }
+        mavenLocal()
+// Android Resolver Repos End
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+    }
+}
