@@ -42,22 +42,27 @@ public class StickyNoteLoader : MonoBehaviour
 
     void LoadNote(string noteId)
     {
-        FirebaseDatabase.DefaultInstance
-            .GetReference("stickynotes").Child(noteId)
-            .GetValueAsync().ContinueWithOnMainThread(task => {
-                if (task.IsFaulted || !task.Result.Exists)
-                {
-                    Debug.LogError("Loading Failed");
-                    return;
-                }
+        dbReference.Child("stickynotes").Child(noteId).ValueChanged += (object sender, ValueChangedEventArgs args) =>
+        {
+            if (args.DatabaseError != null)
+            {
+                Debug.LogError("Firebase error: " + args.DatabaseError.Message);
+                return;
+            }
 
-                Debug.Log("Raw JSON: " + task.Result.GetRawJsonValue());
-                string json = task.Result.GetRawJsonValue();
-                StickyNoteData noteData = JsonUtility.FromJson<StickyNoteData>(json);
-                DisplayNote(noteData);
-            });
-        Debug.Log("trying to get path：stickynotes/" + noteId);
+            if (!args.Snapshot.Exists)
+            {
+                Debug.LogWarning("Note does not exist: " + noteId);
+                return;
+            }
+
+            Debug.Log("Raw JSON: " + args.Snapshot.GetRawJsonValue());
+            string json = args.Snapshot.GetRawJsonValue();
+            StickyNoteData noteData = JsonUtility.FromJson<StickyNoteData>(json);
+            DisplayNote(noteData);
+        };
     }
+
 
     void DisplayNote(StickyNoteData data)
     {
