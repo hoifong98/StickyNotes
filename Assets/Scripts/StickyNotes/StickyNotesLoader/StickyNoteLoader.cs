@@ -280,10 +280,49 @@ public class StickyNoteLoader : MonoBehaviour
             });
     }
 
+    private void FetchNoteDataBeforeOpeningEditPanel()
+    {
+        Debug.Log("Fetching note data before opening edit panel...");
+        FirebaseManager.Instance.DbReference.Child("stickynotes").Child(noteID).GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsCompleted)
+                {
+                    if (task.Result.Exists)
+                    {
+                        currentNoteData = JsonUtility.FromJson<StickyNoteData>(task.Result.GetRawJsonValue());
+                        Debug.Log("Note data fetched successfully.");
+                        OpenEditPanelInternal(); // Call the internal method to populate and show the panel
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Note does not exist: " + noteID);
+                        // Handle the case where the note doesn't exist
+                    }
+                }
+                else if (task.IsFaulted)
+                {
+                    Debug.LogError($"Failed to fetch sticky note data: {task.Exception}");
+                    // Handle the error
+                }
+            });
+    }
+
     public void OpenEditPanel()
     {
-        Debug.Log("OpenEditPanel() called.");
-        Debug.Log($"dataLinePrefab in OpenEditPanel: {dataLinePrefab}");
+        if (FirebaseManager.Instance == null || !FirebaseManager.Instance.IsInitialized)
+        {
+            Debug.LogWarning("Firebase not initialized yet.  Delaying OpenEditPanel().");
+            return;  // Or you could start a short coroutine to retry later
+        }
+
+        FetchNoteDataBeforeOpeningEditPanel();
+    }
+
+
+    private void OpenEditPanelInternal()
+    {
+        Debug.Log("OpenEditPanelInternal() called.");
 
         if (editPanelCanvas != null)
         {
@@ -317,10 +356,12 @@ public class StickyNoteLoader : MonoBehaviour
 
             if (currentNoteData != null && currentNoteData.items != null)
             {
-                Debug.Log($"currentNoteData.items has {currentNoteData.items.Count} items.");
+                Debug.Log($"currentNoteData.items has {currentNoteData.items.Count} items in OpenEditPanelInternal.");
                 for (int i = 0; i < currentNoteData.items.Count; i++)
                 {
                     var item = currentNoteData.items[i];
+                    Debug.Log($"[OpenEditPanelInternal] Item: {item.name}, isVisible from data: {item.isVisible}");
+
                     GameObject itemRowGO = Instantiate(editItemRowPrefab, editItemListContainer);
                     TMP_InputField nameInputField = itemRowGO.transform.Find("ItemRow/ItemName")?.GetComponent<TMP_InputField>();
                     TMP_InputField quantityInputField = itemRowGO.transform.Find("ItemRow/ItemQuantity")?.GetComponent<TMP_InputField>();
@@ -337,11 +378,12 @@ public class StickyNoteLoader : MonoBehaviour
                         visibilityToggle.isOn = item.isVisible;
 
                         var currentItem = item;
+                        visibilityToggle.onValueChanged.RemoveAllListeners(); // Important: Remove previous listeners
                         visibilityToggle.onValueChanged.AddListener((isOn) =>
                         {
                             currentItem.isVisible = isOn;
                             visibilityIconImage.sprite = isOn ? showIcon : hideIcon;
-                            Debug.Log($"Visibility of '{currentItem.name}' set to: {isOn}");
+                            Debug.Log($"[OpenEditPanelInternal] Visibility of '{currentItem.name}' set to: {isOn}");
                         });
                     }
 
