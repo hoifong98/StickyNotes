@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Firebase.Database;
 using Firebase.Extensions;
 using TMPro;
 using System.Linq;
+using Vuforia;
 
 [System.Serializable]
 public class ShoppingItem
@@ -58,8 +60,20 @@ public class StickyNoteLoader : MonoBehaviour
     public Button purpleColorButton;
     private Color originalNoteColor;
 
+    public bool IsManuallyClosed { get; private set; } = false;
+    private ObserverBehaviour observer;
+
     private void OnEnable()
     {
+
+        openEditPanelButton.interactable = false;
+        editPanelSaveButton.interactable = false;
+        editPanelCancelButton.interactable = true;
+        editPanelAddNewItemButton.interactable = true;
+        closePanelButton.interactable = true;
+        closeEditPanelButton.interactable = true;
+        observer = GetComponent<ObserverBehaviour>();
+
         StartCoroutine(WaitForFirebaseAndLoad());
 
         if (openEditPanelButton != null) openEditPanelButton.onClick.AddListener(OpenEditPanel);
@@ -120,6 +134,10 @@ public class StickyNoteLoader : MonoBehaviour
         databaseReference = FirebaseManager.Instance.DbReference;
         Debug.Log("FirebaseManager initialized, loading note: " + noteID);
         LoadNote(noteID);
+
+        openEditPanelButton.interactable = true;
+        editPanelSaveButton.interactable = true;
+        Debug.Log("Firebase UI enabled");
     }
 
 
@@ -131,14 +149,14 @@ public class StickyNoteLoader : MonoBehaviour
             // Update the color of the main sticky note immediately
             if (noteBackground != null)
             {
-                noteBackground.GetComponent<Image>().color = newColor;
+                noteBackground.GetComponent<UnityEngine.UI.Image>().color = newColor;
             }
 
             // Update the color of the edit panel background immediately
-            Image editPanelBackgroundImage = editPanelContainer.GetComponent<Image>();
+            UnityEngine.UI.Image editPanelBackgroundImage = editPanelContainer.GetComponent<UnityEngine.UI.Image>();
             if (editPanelBackgroundImage == null)
             {
-                editPanelBackgroundImage = editPanelCanvas.GetComponentInChildren<Image>();
+                editPanelBackgroundImage = editPanelCanvas.GetComponentInChildren<UnityEngine.UI.Image>();
             }
             if (editPanelBackgroundImage != null)
             {
@@ -180,8 +198,8 @@ public class StickyNoteLoader : MonoBehaviour
                 }
                 StickyNoteData noteData = JsonUtility.FromJson<StickyNoteData>(args.Snapshot.GetRawJsonValue());
 
-            // Only display the note if the edit panel is not currently active
-            if (editPanelCanvas == null || !editPanelCanvas.activeSelf)
+                // Only display the note if the edit panel is not currently active
+                if (editPanelCanvas == null || !editPanelCanvas.activeSelf)
                 {
                     DisplayNote(noteData);
                 }
@@ -248,9 +266,9 @@ public class StickyNoteLoader : MonoBehaviour
         Color noteBgColor = Color.green;
         if (!string.IsNullOrEmpty(data.colorHex) && ColorUtility.TryParseHtmlString(data.colorHex, out noteBgColor))
         {
-            noteBackground.GetComponent<Image>().color = noteBgColor;
+            noteBackground.GetComponent<UnityEngine.UI.Image>().color = noteBgColor;
         }
-        noteBackground.GetComponent<Image>().color = noteBgColor;
+        noteBackground.GetComponent<UnityEngine.UI.Image>().color = noteBgColor;
     }
 
     void UpdateVisualState(Text textComponent, bool done)
@@ -332,19 +350,19 @@ public class StickyNoteLoader : MonoBehaviour
             // Store the original color
             if (noteBackground != null)
             {
-                originalNoteColor = noteBackground.GetComponent<Image>().color;
+                originalNoteColor = noteBackground.GetComponent<UnityEngine.UI.Image>().color;
             }
 
             // Set the Edit Panel background color to match the current sticky note background
-            Image editPanelBackgroundImage = editPanelContainer.GetComponent<Image>();
+            UnityEngine.UI.Image editPanelBackgroundImage = editPanelContainer.GetComponent<UnityEngine.UI.Image>();
             if (editPanelBackgroundImage == null)
             {
-                editPanelBackgroundImage = editPanelCanvas.GetComponentInChildren<Image>();
+                editPanelBackgroundImage = editPanelCanvas.GetComponentInChildren<UnityEngine.UI.Image>();
             }
 
             if (noteBackground != null && editPanelBackgroundImage != null)
             {
-                editPanelBackgroundImage.color = noteBackground.GetComponent<Image>().color;
+                editPanelBackgroundImage.color = noteBackground.GetComponent<UnityEngine.UI.Image>().color;
                 Debug.Log("Set Edit Panel background color.");
             }
             else
@@ -367,7 +385,7 @@ public class StickyNoteLoader : MonoBehaviour
                     TMP_InputField quantityInputField = itemRowGO.transform.Find("ItemRow/ItemQuantity")?.GetComponent<TMP_InputField>();
                     Button removeButton = itemRowGO.transform.Find("ItemRow/DeleteButton")?.GetComponent<Button>();
                     Toggle visibilityToggle = itemRowGO.GetComponentInChildren<Toggle>();
-                    Image visibilityIconImage = visibilityToggle?.transform.Find("IconImage")?.GetComponent<Image>();
+                    UnityEngine.UI.Image visibilityIconImage = visibilityToggle?.transform.Find("IconImage")?.GetComponent<UnityEngine.UI.Image>();
 
                     if (nameInputField != null) nameInputField.text = item.name;
                     if (quantityInputField != null) quantityInputField.text = item.quantity.ToString();
@@ -502,14 +520,14 @@ public class StickyNoteLoader : MonoBehaviour
         // Revert the color of the main sticky note
         if (noteBackground != null)
         {
-            noteBackground.GetComponent<Image>().color = originalNoteColor;
+            noteBackground.GetComponent<UnityEngine.UI.Image>().color = originalNoteColor;
         }
 
         // Revert the color of the edit panel background as well, to be consistent
-        Image editPanelBackgroundImage = editPanelContainer.GetComponent<Image>();
+        UnityEngine.UI.Image editPanelBackgroundImage = editPanelContainer.GetComponent<UnityEngine.UI.Image>();
         if (editPanelBackgroundImage == null)
         {
-            editPanelBackgroundImage = editPanelCanvas.GetComponentInChildren<Image>();
+            editPanelBackgroundImage = editPanelCanvas.GetComponentInChildren<UnityEngine.UI.Image>();
         }
         if (editPanelBackgroundImage != null)
         {
@@ -517,9 +535,33 @@ public class StickyNoteLoader : MonoBehaviour
         }
     }
 
+    private IEnumerator ReenableObserverAfterDelay()
+    {
+        yield return new WaitForSeconds(0.2f); 
+        observer.enabled = true;
+    }
+
     public void ClosePanel()
     {
         editPanelCanvas.SetActive(false);
         noteBackground.SetActive(false);
+        IsManuallyClosed = true;
+
+        if (observer != null)
+        {
+            observer.enabled = false;
+            StartCoroutine(ReenableObserverAfterDelay());
+        }
+    }
+
+    public void ReloadNoteIfClosed()
+    {
+        if (IsManuallyClosed)
+        {
+            Debug.Log("ReloadNoteIfClosed called. Enabling noteBackground...");
+            DisplayNote(currentNoteData);
+            noteBackground.SetActive(true);
+            IsManuallyClosed = false;
+        }
     }
 }
